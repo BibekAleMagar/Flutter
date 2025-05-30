@@ -36,24 +36,38 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       backgroundColor: Colors.grey.shade200,
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Row(
-        children: [
-          Coustomcard(
-            colors: Colors.green,
-            margin: EdgeInsets.only(left: 12, bottom: 12, top: 12),
-          ),
-          Coustomcard(
-            colors: Colors.blue,
-            margin: EdgeInsets.only(left: 12, bottom: 12, top: 12),
-          ),
-          Coustomcard(
-            colors: Colors.orange,
-            margin: EdgeInsets.only(left: 12, bottom: 12, top: 12, right: 12),
-          ),
-        ],
+      body: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Row(
+          children: [
+            CoustomCard(
+              color: Colors.red,
+              margin: EdgeInsets.only(left: 12, top: 12, bottom: 12),
+            ),
+            CoustomCard(
+              color: Colors.green,
+              margin: EdgeInsets.only(left: 12, top: 12, bottom: 12),
+            ),
+            CoustomCard(
+              color: Colors.blue,
+              margin: EdgeInsets.only(left: 12, top: 12, bottom: 12, right: 12),
+            ),
+            CoustomCard(
+              color: Colors.blue,
+              margin: EdgeInsets.only(left: 12, top: 12, bottom: 12, right: 12),
+            ),
+            CoustomCard(
+              color: Colors.blue,
+              margin: EdgeInsets.only(left: 12, top: 12, bottom: 12, right: 12),
+            ),
+            CoustomCard(
+              color: Colors.blue,
+              margin: EdgeInsets.only(left: 12, top: 12, bottom: 12, right: 12),
+            ),
+          ],
+        ),
       ),
     );
   }
