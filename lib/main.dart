@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:our_app/widgets/CoustomCard.dart';
+import 'package:our_app/widgets/FbFeed.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,36 +39,66 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
-        child: Row(
-          children: [
-            CoustomCard(
-              color: Colors.red,
-              margin: EdgeInsets.only(left: 12, top: 12, bottom: 12),
+      body: ListView(
+        children: [
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                CoustomCard(
+                  color: Colors.red,
+                  margin: EdgeInsets.only(left: 12, top: 12, bottom: 12),
+                ),
+                CoustomCard(
+                  color: Colors.green,
+                  margin: EdgeInsets.only(left: 12, top: 12, bottom: 12),
+                ),
+                CoustomCard(
+                  color: Colors.blue,
+                  margin:
+                      EdgeInsets.only(left: 12, top: 12, bottom: 12, right: 12),
+                ),
+                CoustomCard(
+                  color: Colors.blue,
+                  margin:
+                      EdgeInsets.only(left: 12, top: 12, bottom: 12, right: 12),
+                ),
+                CoustomCard(
+                  color: Colors.blue,
+                  margin:
+                      EdgeInsets.only(left: 12, top: 12, bottom: 12, right: 12),
+                ),
+                CoustomCard(
+                  color: Colors.blue,
+                  margin:
+                      EdgeInsets.only(left: 12, top: 12, bottom: 12, right: 12),
+                ),
+              ],
             ),
-            CoustomCard(
-              color: Colors.green,
-              margin: EdgeInsets.only(left: 12, top: 12, bottom: 12),
-            ),
-            CoustomCard(
-              color: Colors.blue,
-              margin: EdgeInsets.only(left: 12, top: 12, bottom: 12, right: 12),
-            ),
-            CoustomCard(
-              color: Colors.blue,
-              margin: EdgeInsets.only(left: 12, top: 12, bottom: 12, right: 12),
-            ),
-            CoustomCard(
-              color: Colors.blue,
-              margin: EdgeInsets.only(left: 12, top: 12, bottom: 12, right: 12),
-            ),
-            CoustomCard(
-              color: Colors.blue,
-              margin: EdgeInsets.only(left: 12, top: 12, bottom: 12, right: 12),
-            ),
-          ],
-        ),
+          ),
+          Fbfeed(),
+          Fbfeed(),
+          Fbfeed(),
+          Fbfeed(),
+          Fbfeed(),
+          Fbfeed(),
+          Fbfeed(),
+          Fbfeed(),
+          Fbfeed(),
+          Fbfeed(),
+          Fbfeed(),
+          Fbfeed(),
+          Fbfeed(),
+          Fbfeed(),
+          Fbfeed(),
+          Fbfeed(),
+          Fbfeed(),
+          Fbfeed(),
+          Fbfeed(),
+          Fbfeed(),
+          Fbfeed(),
+          Fbfeed(),
+        ],
       ),
     );
   }
