@@ -1,4 +1,8 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:our_app/dataModel/Story.dart';
 import 'package:our_app/widgets/CoustomCard.dart';
 import 'package:our_app/widgets/FbFeed.dart';
 
@@ -32,6 +36,23 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  List<Story> _story = [];
+
+  @override
+  void initState() {
+    onloadData();
+    super.initState();
+  }
+
+  onloadData() async {
+    final String response = await rootBundle.loadString('/StoryJson.json');
+    final List<dynamic> data = json.decode(response);
+    _story = data.map((json) => Story.fromJson(json)).toList();
+    setState(() {});
+    print("I am here");
+    print(data);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,34 +66,15 @@ class _MyHomePageState extends State<MyHomePage> {
             scrollDirection: Axis.horizontal,
             child: Row(
               children: [
-                CoustomCard(
-                  color: Colors.red,
-                  margin: EdgeInsets.only(left: 12, top: 12, bottom: 12),
-                ),
-                CoustomCard(
-                  color: Colors.green,
-                  margin: EdgeInsets.only(left: 12, top: 12, bottom: 12),
-                ),
-                CoustomCard(
-                  color: Colors.blue,
-                  margin:
-                      EdgeInsets.only(left: 12, top: 12, bottom: 12, right: 12),
-                ),
-                CoustomCard(
-                  color: Colors.blue,
-                  margin:
-                      EdgeInsets.only(left: 12, top: 12, bottom: 12, right: 12),
-                ),
-                CoustomCard(
-                  color: Colors.blue,
-                  margin:
-                      EdgeInsets.only(left: 12, top: 12, bottom: 12, right: 12),
-                ),
-                CoustomCard(
-                  color: Colors.blue,
-                  margin:
-                      EdgeInsets.only(left: 12, top: 12, bottom: 12, right: 12),
-                ),
+                ..._story
+                    .map(
+                      (s) => CoustomCard(
+                        color: Colors.red,
+                        margin: EdgeInsets.only(left: 12, top: 12, bottom: 12),
+                        story: s,
+                      ),
+                    )
+                    .toList()
               ],
             ),
           ),

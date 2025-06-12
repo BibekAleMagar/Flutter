@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "name": "Ashish Gautam",
+    "storyImage": "https://picsum.photos/seed/1/400/300",
+    "profileImage": "https://picsum.photos/seed/2/400/300"
+  },
+  {
+    "id": 2,
+    "name": "Sita Sharma",
+    "storyImage": "https://picsum.photos/seed/2/400/300",
+    "profileImage": "https://picsum.photos/seed/2/400/300"
+  },
+  {
+    "id": 3,
+    "name": "Ramesh Thapa",
+    "storyImage": "https://picsum.photos/seed/3/400/300",
+    "profileImage": "https://picsum.photos/seed/2/400/300"
+  },
+  {
+    "id": 4,
+    "name": "Nisha Joshi",
+    "storyImage": "https://picsum.photos/seed/4/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/women/4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Manish Karki",
+    "storyImage": "https://picsum.photos/seed/5/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/men/5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Bimala Adhikari",
+    "storyImage": "https://picsum.photos/seed/6/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/women/6.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Sunil Basnet",
+    "storyImage": "https://picsum.photos/seed/7/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/men/7.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Puja Shrestha",
+    "storyImage": "https://picsum.photos/seed/8/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/women/8.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Sujan Malla",
+    "storyImage": "https://picsum.photos/seed/9/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/men/9.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Anita Lama",
+    "storyImage": "https://picsum.photos/seed/10/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/women/10.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Rajan Khadka",
+    "storyImage": "https://picsum.photos/seed/11/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/men/11.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Meena Raut",
+    "storyImage": "https://picsum.photos/seed/12/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/women/12.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Dipesh Poudel",
+    "storyImage": "https://picsum.photos/seed/13/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/men/13.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Kriti Acharya",
+    "storyImage": "https://picsum.photos/seed/14/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/women/14.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Binod Aryal",
+    "storyImage": "https://picsum.photos/seed/15/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/men/15.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Sneha Pokharel",
+    "storyImage": "https://picsum.photos/seed/16/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/women/16.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Prakash Bista",
+    "storyImage": "https://picsum.photos/seed/17/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/men/17.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Rupa Magar",
+    "storyImage": "https://picsum.photos/seed/18/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/women/18.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Deepak Neupane",
+    "storyImage": "https://picsum.photos/seed/19/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/men/19.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Laxmi Dhakal",
+    "storyImage": "https://picsum.photos/seed/20/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/women/20.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Kamal Giri",
+    "storyImage": "https://picsum.photos/seed/21/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/men/21.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Anju Kunwar",
+    "storyImage": "https://picsum.photos/seed/22/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/women/22.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Ritik Shrestha",
+    "storyImage": "https://picsum.photos/seed/23/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/men/23.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Monika Dahal",
+    "storyImage": "https://picsum.photos/seed/24/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/women/24.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Aayush Baral",
+    "storyImage": "https://picsum.photos/seed/25/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/men/25.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Karuna Maharjan",
+    "storyImage": "https://picsum.photos/seed/26/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/women/26.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Sudip Kharel",
+    "storyImage": "https://picsum.photos/seed/27/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/men/27.jpg"
+  },
+  {
+    "id": 28,
+    "name": "Rekha Panta",
+    "storyImage": "https://picsum.photos/seed/28/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/women/28.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Bijay Chaudhary",
+    "storyImage": "https://picsum.photos/seed/29/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/men/29.jpg"
+  },
+  {
+    "id": 30,
+    "name": "Ritika Subedi",
+    "storyImage": "https://picsum.photos/seed/30/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/women/30.jpg"
+  },
+  {
+    "id": 31,
+    "name": "Arjun Tamang",
+    "storyImage": "https://picsum.photos/seed/31/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/men/31.jpg"
+  },
+  {
+    "id": 32,
+    "name": "Kavita Singh",
+    "storyImage": "https://picsum.photos/seed/32/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/women/32.jpg"
+  },
+  {
+    "id": 33,
+    "name": "Sagar Rana",
+    "storyImage": "https://picsum.photos/seed/33/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/men/33.jpg"
+  },
+  {
+    "id": 34,
+    "name": "Binita Shakya",
+    "storyImage": "https://picsum.photos/seed/34/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/women/34.jpg"
+  },
+  {
+    "id": 35,
+    "name": "Bibek Joshi",
+    "storyImage": "https://picsum.photos/seed/35/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/men/35.jpg"
+  },
+  {
+    "id": 36,
+    "name": "Apsara Chaulagain",
+    "storyImage": "https://picsum.photos/seed/36/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/women/36.jpg"
+  },
+  {
+    "id": 37,
+    "name": "Nirajan Khatri",
+    "storyImage": "https://picsum.photos/seed/37/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/men/37.jpg"
+  },
+  {
+    "id": 38,
+    "name": "Usha Pandey",
+    "storyImage": "https://picsum.photos/seed/38/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/women/38.jpg"
+  },
+  {
+    "id": 39,
+    "name": "Krishna Regmi",
+    "storyImage": "https://picsum.photos/seed/39/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/men/39.jpg"
+  },
+  {
+    "id": 40,
+    "name": "Sarita Sapkota",
+    "storyImage": "https://picsum.photos/seed/40/400/300",
+    "profileImage": "https://randomuser.me/api/portraits/women/40.jpg"
+  }
+]
