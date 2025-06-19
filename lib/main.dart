@@ -1,8 +1,8 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:our_app/dataModel/Story.dart';
+import 'package:our_app/dataModel/Post.dart';
 import 'package:our_app/widgets/CoustomCard.dart';
 import 'package:our_app/widgets/FbFeed.dart';
 
@@ -13,7 +13,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -36,21 +35,25 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  List<Story> _story = [];
+  List<Story> _stories = [];
+  List<Post> _posts = [];
 
   @override
   void initState() {
-    onloadData();
     super.initState();
+    onloadData();
   }
 
-  onloadData() async {
-    final String response = await rootBundle.loadString('/StoryJson.json');
-    final List<dynamic> data = json.decode(response);
-    _story = data.map((json) => Story.fromJson(json)).toList();
+  Future<void> onloadData() async {
+    final String storyResponse = await rootBundle.loadString('assets/StoryJson.json');
+    final List<dynamic> storyData = json.decode(storyResponse);
+    _stories = storyData.map((json) => Story.fromJson(json)).toList();
+
+    final String postResponse = await rootBundle.loadString('assets/PostJson.json');
+    final List<dynamic> postData = json.decode(postResponse);
+    _posts = postData.map((json) => Post.fromJson(json)).toList();
+
     setState(() {});
-    print("I am here");
-    print(data);
   }
 
   @override
@@ -62,44 +65,20 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: ListView(
         children: [
+          // Story Cards
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(
-              children: [
-                ..._story
-                    .map(
-                      (s) => CoustomCard(
-                        color: Colors.red,
-                        margin: EdgeInsets.only(left: 12, top: 12, bottom: 12),
-                        story: s,
-                      ),
-                    )
-                    .toList()
-              ],
+              children: _stories.map((s) => CoustomCard(
+                color: Colors.red,
+                margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
+                story: s,
+              )).toList(),
             ),
           ),
-          Fbfeed(),
-          Fbfeed(),
-          Fbfeed(),
-          Fbfeed(),
-          Fbfeed(),
-          Fbfeed(),
-          Fbfeed(),
-          Fbfeed(),
-          Fbfeed(),
-          Fbfeed(),
-          Fbfeed(),
-          Fbfeed(),
-          Fbfeed(),
-          Fbfeed(),
-          Fbfeed(),
-          Fbfeed(),
-          Fbfeed(),
-          Fbfeed(),
-          Fbfeed(),
-          Fbfeed(),
-          Fbfeed(),
-          Fbfeed(),
+
+          // Facebook Posts Feed
+          ..._posts.map((post) => Fbfeed(post: post)),
         ],
       ),
     );

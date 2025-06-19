@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Khem Raj Saud",
+    "time": 11,
+    "description": "Kednrix is doing project",
+    "postImage": [
+      "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80"
+    ],
+    "profileImage": "https://picsum.photos/id/1011/100/100"
+  },
+  {
+    "id": 2,
+    "title": "Bibek Bhandari",
+    "time": 9,
+    "description": "Bibek is working on a MERN project",
+    "postImage": [
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=600&q=80"
+    ],
+    "profileImage": "https://picsum.photos/id/1021/100/100"
+  },
+  {
+    "id": 3,
+    "title": "Anisha Gurung",
+    "time": 14,
+    "description": "Anisha is designing a mobile app UI",
+    "postImage": [
+      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80"
+    ],
+    "profileImage": "https://picsum.photos/id/1027/100/100"
+  },
+  {
+    "id": 4,
+    "title": "Sujan Thapa",
+    "time": 16,
+    "description": "Sujan is learning backend development",
+    "postImage": [
+      "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=600&q=80"
+    ],
+    "profileImage": "https://picsum.photos/id/1035/100/100"
+  },
+  {
+    "id": 5,
+    "title": "Aayush Karki",
+    "time": 10,
+    "description": "Aayush is presenting his group project",
+    "postImage": [
+      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=600&q=80"
+    ],
+    "profileImage": "https://picsum.photos/id/1043/100/100"
+  },
+  {
+    "id": 6,
+    "title": "Ritika Sharma",
+    "time": 13,
+    "description": "Ritika is debugging her frontend code",
+    "postImage": [
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80"
+    ],
+    "profileImage": "https://picsum.photos/id/1051/100/100"
+  }
+]

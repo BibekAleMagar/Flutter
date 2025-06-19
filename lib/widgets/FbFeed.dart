@@ -1,17 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:our_app/dataModel/Post.dart';
 
 class Fbfeed extends StatelessWidget {
-  const Fbfeed({super.key});
+  final Post post;
+
+  const Fbfeed({super.key, required this.post});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
       color: Colors.white,
-      margin: EdgeInsets.only(bottom: 12),
-      padding: EdgeInsets.only(bottom: 12),
+      margin: const EdgeInsets.only(bottom: 12),
+      padding: const EdgeInsets.only(bottom: 12),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // Header Section
           Padding(
             padding: const EdgeInsets.all(12.0),
             child: Row(
@@ -19,26 +24,30 @@ class Fbfeed extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Container(
-                      width: 60,
-                      height: 60,
-                      decoration: BoxDecoration(
-                          color: Colors.orange, shape: BoxShape.circle),
+                    // ✅ Profile Image with fallback
+                    CircleAvatar(
+                      radius: 30,
+                      backgroundColor: Colors.grey[300],
+                      backgroundImage: post.profileImage.isNotEmpty
+                          ? NetworkImage(post.profileImage)
+                          : null,
+                      child: post.profileImage.isEmpty
+                          ? const Icon(Icons.person)
+                          : null,
                     ),
-                    SizedBox(
-                      width: 12,
-                    ),
+                    const SizedBox(width: 12),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Texas College of Management and IT"),
+                        Text(
+                          post.title,
+                          style: const TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        const SizedBox(height: 4),
                         Row(
                           children: [
-                            Text("12h ."),
-                            Icon(
-                              Icons.language,
-                              size: 14,
-                            )
+                            Text("${post.time}h · "),
+                            const Icon(Icons.language, size: 14),
                           ],
                         )
                       ],
@@ -46,39 +55,42 @@ class Fbfeed extends StatelessWidget {
                   ],
                 ),
                 Row(
-                  children: [Icon(Icons.more_horiz), Icon(Icons.close)],
+                  children: const [
+                    Icon(Icons.more_horiz),
+                    SizedBox(width: 8),
+                    Icon(Icons.close),
+                  ],
                 )
               ],
             ),
           ),
-          SizedBox(
-            height: 12,
+
+          // Description
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 12),
+            child: Text(post.description),
           ),
-          Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 12, right: 12),
-                child: Text(
-                    "Today is Friday. We will have fun today in Class. Today is Friday. We will have fun today in Class Today is Friday. We will have fun today in Class "),
-              ),
-              SizedBox(
-                height: 12,
-              ),
-              Container(
+
+          const SizedBox(height: 12),
+
+          // Post Images
+          ...post.postImages.map((imgUrl) => Padding(
+            padding: const EdgeInsets.symmetric(vertical: 6.0),
+            child: Image.network(
+              imgUrl,
+              height: 200,
+              width: double.infinity,
+              fit: BoxFit.cover,
+              errorBuilder: (context, error, stackTrace) => Container(
                 height: 200,
                 width: double.infinity,
-                color: Colors.blueAccent,
+                color: Colors.grey[300],
+                child: const Center(child: Icon(Icons.broken_image, size: 50)),
               ),
-              SizedBox(
-                height: 12,
-              ),
-              Container(
-                height: 200,
-                width: double.infinity,
-                color: Colors.blueGrey,
-              )
-            ],
-          )
+            ),
+          )).toList(),
+
+          const SizedBox(height: 12),
         ],
       ),
     );
