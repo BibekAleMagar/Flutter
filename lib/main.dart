@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:our_app/dataModel/Story.dart';
+import 'package:our_app/dataModel/story.dart';
 import 'package:our_app/dataModel/Post.dart';
 import 'package:our_app/widgets/CoustomCard.dart';
 import 'package:our_app/widgets/FbFeed.dart';
